@@ -1,5 +1,6 @@
 import ProductFilter from './ProductFilter';
 import CategoryGrid from './../category/CategoryGrid';
+import ProductList from './ProductList'
 
 export const ProductCatalog = () => {
   return (
@@ -25,7 +26,7 @@ export const ProductCatalog = () => {
           <ProductFilter />
           <main className='w-full lg:w-3/4'>
             <CategoryGrid />
-            
+            <ProductList />
           </main>
         </div>
       </div>

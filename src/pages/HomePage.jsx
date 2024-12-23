@@ -7,14 +7,14 @@ import ProductDisplay from "../components/ProductDisplay";
 import NewProductSale from "../components/NewProductSale";
 // import TopRatedSection from "../components/TopProductSection";
 import EquipmentCategory from "../components/category/CategoryBar";
-import Header from "../components/common/Header";
-// import HeroSection from "../../carousel/HeroSection";
+import { HeaderHome } from "../components/common/HeaderHome";
+import HeroSection from "../components/carousel/HeroSection";
 
 const HomePage = () => {
   return (
     <>
-      <Header />
-      {/* <HeroSection /> */}
+      <HeaderHome/>
+      <HeroSection />
       <EquipmentCategory />
       <NewProductSale />
       <ProductDisplay />

@@ -1,4 +1,4 @@
-import Header from "../components/common/Header";
+import HeaderCommon from "../components/common/HeaderCommon";
 import NewsletterBar from "../components/common/NewsletterBar";
 import Footer from "../components/common/Footer";
 import AuthForm from "../components/auth/AuthForm";
@@ -6,7 +6,7 @@ import AuthForm from "../components/auth/AuthForm";
 const AuthPage = function () {
   return (
     <>
-      <Header />
+      <HeaderCommon />
       <AuthForm />
       <NewsletterBar />
       <Footer />

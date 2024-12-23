@@ -1,4 +1,6 @@
 import PropTypes from "prop-types";
+import runningShoe1 from "../assets/running_shoe1.jpg";
+import runningShoe2 from "../assets/running_shoe2.jpg";
 
 const CollectionCard = ({ collection }) => {
   return (
@@ -6,7 +8,7 @@ const CollectionCard = ({ collection }) => {
       <img
         src={collection.imageUrl}
         alt={collection.title}
-        className="absolute inset-0 object-cover w-full h-full rounded-3xl opacity-50"
+        className="absolute inset-0 object-cover w-full h-full rounded-3xl opacity-90"
       />
       <div className="bg-white max-w-xs p-4 text-center rounded-md shadow-md relative z-10">
         <h3 className="text-xl font-bold">{collection.title}</h3>
@@ -30,13 +32,13 @@ const CollectionGrid = () => {
       title: "Trail Running Shoes",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
-      imageUrl: "https://via.placeholder.com/1000",
+      imageUrl: runningShoe1,
     },
     {
       title: "Mountain Biking Gear",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
-      imageUrl: "https://via.placeholder.com/1000",
+      imageUrl: runningShoe2,
     },
   ];
 

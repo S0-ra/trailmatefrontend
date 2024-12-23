@@ -54,6 +54,7 @@ const ProductDetails = function ({ product }) {
 
   useEffect(() => {
     axios(
+      // eslint-disable-next-line react/prop-types
       `http://localhost:8000/api/equipment/${product.equipmentid}/average-rating`
     ).then((res) => {
       setRating(res.data);
@@ -66,10 +67,12 @@ const ProductDetails = function ({ product }) {
     <>
       <div className="flex flex-col gap-2 mt-10">
         <RatingStars rating={rating} />
+      
         <h1 className="text-2xl mb-2">{product.name}</h1>
         <div className="flex items-center gap-2 mb-8">
           <h1 className="text-3xl font-semibold">{product.price}</h1>
           <p className="text-[#c4c4c4]">
+        \
             {product.avaibilitystatus.toUpperCase()}
           </p>
         </div>

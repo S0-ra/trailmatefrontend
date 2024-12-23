@@ -1,4 +1,7 @@
 import PropTypes from "prop-types";
+import hammockImage from '../assets/hammock1.jpg'
+import sunglassesImage from '../assets/sunglasses1.jpg'
+import helmetImage from '../assets/helmet1.jpg'
 
 const Card = ({ title, price, imgSrc, isNew }) => (
   <div className="bg-white border border-gray-400 rounded-bl-xl rounded-br-xl relative h-96 flex flex-col">
@@ -10,7 +13,7 @@ const Card = ({ title, price, imgSrc, isNew }) => (
     <img src={imgSrc} alt={title} className="w-full h-80 mb-4 object-cover" />
     <div className="text-center">
       <p className="text-sm my-2">{title}</p>
-      <p className="text-red-500 text-sm font-semibold mb-4">${price}</p>
+      <p className="text-red-500 text-sm font-semibold mb-4">Rs {price}</p>
     </div>
   </div>
 );
@@ -35,20 +38,20 @@ const NewProductSale = () => (
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-screen-lg mx-auto">
         <Card
           title="Hammocks"
-          price={299}
-          imgSrc="https://via.placeholder.com/600x400"
+          price={1200}
+          imgSrc={hammockImage}
           isNew={true}
         />
         <Card
-          title="Headlights"
-          price={299}
-          imgSrc="https://via.placeholder.com/600x400"
+          title="Sunglasses"
+          price={2000}
+          imgSrc={sunglassesImage}
           isNew={true}
         />
         <Card
           title="Helmets"
-          price={299}
-          imgSrc="https://via.placeholder.com/600x400"
+          price={5000}
+          imgSrc={helmetImage}
           isNew={true}
         />
       </div>

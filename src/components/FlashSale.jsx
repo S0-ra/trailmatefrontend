@@ -1,5 +1,10 @@
 import PromoCard from "./PromoCard";
 import ProductPromoCard from "./PromoCard";
+import hammock from '../assets/hammock1.jpg';
+import sale from '../assets/sale1.jpg';
+import glasses from '../assets/glasses1.jpg';
+
+
 
 const FlashSale = () => {
   return (
@@ -12,11 +17,11 @@ const FlashSale = () => {
         {/* Flash Sale Right Product Cards */}
         <ProductPromoCard
           title="Hammocks"
-          oldPrice={29.99}
-          newPrice={19.99}
+          oldPrice={2999}
+          newPrice={1999}
           available={10}
           sold={5}
-          imageUrl="https://via.placeholder.com/600x400"
+          imageUrl={hammock}
         />
         <ProductPromoCard
           title="Hammocks"
@@ -24,7 +29,7 @@ const FlashSale = () => {
           newPrice={19.99}
           available={10}
           sold={5}
-          imageUrl="https://via.placeholder.com/600x400"
+          imageUrl={sale}
         />
         <ProductPromoCard
           title="Hammocks"
@@ -32,7 +37,7 @@ const FlashSale = () => {
           newPrice={19.99}
           available={10}
           sold={5}
-          imageUrl="https://via.placeholder.com/600x400"
+          imageUrl={glasses}
         />
       </div>
     </>

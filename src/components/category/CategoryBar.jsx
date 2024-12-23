@@ -4,7 +4,7 @@ const CategoryBar = () => (
       <h3>Category</h3>
     </div>
     <div className="equip-category pt-4 text-gray-950 text-xs mx-5 flex space-x-6">
-      <a href="#" className="flex items-center space-x-2">
+      <a href="#" className="flex items-center space-x-2 border border-gray-400 rounded px-4 py-3 w-full sm:w-auto sm:flex-nowrap">
         <img
           src="src/assets/trekking-pole.png"
           alt="Trekking Poles"
@@ -12,19 +12,19 @@ const CategoryBar = () => (
         />
         <span>Trekking Poles</span>
       </a>
-      <a href="#" className="flex items-center space-x-4">
+      <a href="#" className="flex items-center space-x-2 border border-gray-400 rounded px-4 py-3 w-full sm:w-auto sm:flex-nowrap">
         <img src="src/assets/headlamp.png" alt="HeadLamp" className="w-5 h-5" />
         <span>HeadLamp</span>
       </a>
-      <a href="#" className="flex items-center space-x-4">
+      <a href="#" className="flex items-center space-x-2 border border-gray-400 rounded px-4 py-3 w-full sm:w-auto sm:flex-nowrap">
         <img src="src/assets/hammock.png" alt="Hammock" className="w-5 h-5" />
         <span>Hammock</span>
       </a>
-      <a href="#" className="flex items-center space-x-4">
+      <a href="#" className="flex items-center space-x-2 border border-gray-400 rounded px-4 py-3 w-full sm:w-auto sm:flex-nowrap">
         <img src="src/assets/gaiter.png" alt="Gaiters" className="w-5 h-5" />
         <span>Gaiter</span>
       </a>
-      <a href="#" className="flex items-center space-x-4">
+      <a href="#" className="flex items-center space-x-2 border border-gray-400 rounded px-4 py-3 w-full sm:w-auto sm:flex-nowrap">
         <img
           src="src/assets/sunglasses.png"
           alt="Sunglasses"
@@ -32,7 +32,7 @@ const CategoryBar = () => (
         />
         <span>Sunglasses</span>
       </a>
-      <a href="#" className="flex items-center space-x-4">
+      <a href="#" className="flex items-center space-x-2 border border-gray-400 rounded px-4 py-3 w-full sm:w-auto sm:flex-nowrap">
         <img src="src/assets/other.png" alt="Others" className="w-5 h-5" />
         <span>Other Categories</span>
       </a>

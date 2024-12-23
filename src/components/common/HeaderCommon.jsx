@@ -19,7 +19,7 @@ const HeaderCommon = function () {
           <a href="/" className="hover:text-red-400">
             Home
           </a>
-          <a href="/about" className="text-red-400">
+          <a href="/about" className="hover:text-red-400">
             About
           </a>
           <a href="/category" className="hover:text-red-400">
