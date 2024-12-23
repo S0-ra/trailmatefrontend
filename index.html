@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      href="/src/assets/Trailmatelogo-04.png"
+      type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trailmate</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- owl carousel -->
+    <script>
+      $(document).ready(function () {
+        $("#sync1").owlCarousel({
+          items: 1,
+          loop: true,
+          autoplay: true,
+          dots: true,
+        });
+      });
+    </script>
+
+    <!-- timer -->
+    <script>
+      // Function to start countdown timer
+      function startTimer(duration, display) {
+        let timer = duration,
+          hours,
+          minutes,
+          seconds;
+        setInterval(function () {
+          hours = Math.floor(timer / 3600);
+          minutes = Math.floor((timer % 3600) / 60);
+          seconds = Math.floor(timer % 60);
+
+          // Display the countdown in respective divs
+          display.innerHTML = `
+            <div class="flex flex-col items-center border border-gray-400 rounded-2xl px-2 py-3">
+              <span class="text-red-500  text-xl font-bold">${hours}</span>
+              <span class="text-gray-500 text-xs">Hours</span>
+            </div>
+            <div class="flex flex-col items-center border border-gray-400 rounded-2xl px-2 py-3">
+              <span class="text-red-500 text-xl font-bold">${minutes}</span>
+              <span class="text-gray-500 text-xs">Minutes</span>
+            </div>
+            <div class="flex flex-col items-center border border-gray-400 rounded-2xl px-2 py-3">
+              <span class="text-red-500 text-xl font-bold">${seconds}</span>
+              <span class="text-gray-500 text-xs">Seconds</span>
+            </div>`;
+
+          // Decrement timer
+          if (--timer < 0) {
+            timer = duration; // Reset the timer after reaching 0
+          }
+        }, 1000);
+      }
+
+      // Set the initial countdown time (e.g., 2 hours)
+      const countdownDuration = 2 * 60 * 60; // 2 hours in seconds
+
+      // Find the elements where the timers should appear
+      const timerLeft = document.getElementById("timer-left");
+      const timerRight1 = document.getElementById("timer-right-1");
+      const timerRight2 = document.getElementById("timer-right-2");
+      const timerLeft2 = document.getElementById("timer-left-2");
+
+      // Start the timers for each card
+      window.onload = function () {
+        startTimer(countdownDuration, timerLeft);
+        startTimer(countdownDuration, timerRight1);
+        startTimer(countdownDuration, timerRight2);
+        startTimer(countdownDuration, timerLeft2);
+      };
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $(".top-rated-carousel").owlCarousel({
+          items: 4,
+          loop: true,
+          dots: true,
+          nav: true,
+          margin: 20,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 2,
+            },
+            1000: {
+              items: 4,
+            },
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

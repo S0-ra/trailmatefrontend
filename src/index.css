@@ -1,0 +1,267 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: poppins;
+}
+div .text-red-400 {
+  color: #f46b5b;
+}
+
+.social-media-icons a {
+  color: #949494;
+}
+
+.contact a {
+  color: #000000;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.custom-hr {
+  width: 95%;
+  position: relative;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.hero-section {
+  margin-top: 25px;
+  padding: 50px;
+  background-color: #c4c4c4;
+  border-radius: 20px;
+  border-color: none;
+}
+
+.hero-section h2 {
+  color: #383838;
+  font-weight: bold;
+  font-size: 24px; /* Default size */
+  line-height: 32px;
+  font-family: montserrat;
+}
+
+/* Responsive Media Queries */
+@media (min-width: 640px) {
+  .hero-section h2 {
+    font-size: 32px;
+    line-height: 40px;
+    font-family: montserrat;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-section h2 {
+    font-size: 45px;
+    line-height: 50px;
+    font-family: montserrat;
+  }
+}
+
+.title-part {
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+
+.equip-category a {
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.equip-category a:hover {
+  background-color: rgb(245, 245, 245);
+  border-color: rgb(100, 100, 100);
+}
+
+@media (max-width: 640px) {
+  .equip-category a {
+    padding: 8px 12px; /* Slightly smaller padding for smaller screens */
+  }
+}
+
+.sub-headings {
+  font-family: montserrat;
+  padding-top: 60px;
+  font-weight: bolder;
+  font-size: 35px;
+}
+.about-sub-heading {
+  font-family: montserrat;
+  font-weight: bolder;
+  font-size: 35px;
+}
+
+/* Adjust styles for small screens */
+/* Adjust timer sizes and spacing for small screens */
+@media (max-width: 768px) {
+  #timer-left,
+  #timer-right-1,
+  #timer-right-2 {
+    font-size: 0.875rem; /* Smaller font size */
+    padding: 4px 4px; /* Reduced padding */
+  }
+
+  #timer-left .text-xl,
+  #timer-right-1 .text-xl,
+  #timer-right-2 .text-xl .text-xl {
+    font-size: 1rem; /* Smaller font size for the timer numbers */
+  }
+
+  #timer-left .text-xs,
+  #timer-right-1 .text-xs,
+  #timer-right-2 .text-xs .text-xs {
+    font-size: 0.625rem; /* Smaller text for labels */
+  }
+
+  #timer-left .border,
+  #timer-right-1 .border,
+  #timer-right-2 .border {
+    .border {
+      padding: 4px; /* Reduced padding in the borders */
+    }
+
+    /* Adjust spacing between timer columns */
+    #timer-left,
+    #timer-right-1,
+    #timer-right-2 {
+      gap: 4px; /* Reduced spacing between timer items */
+    }
+  }
+}
+@media (max-width: 480px) {
+  #timer-left,
+  #timer-right-1,
+  #timer-right-2 {
+    font-size: 0.75rem; /* Even smaller font size for very small screens */
+    padding: 3px 3px; /* Further reduced padding */
+  }
+
+  #timer-left .text-xl,
+  #timer-right-1 .text-xl,
+  #timer-right-2 .text-xl {
+    font-size: 0.875rem; /* Even smaller timer numbers */
+  }
+
+  #timer-left .text-xs,
+  #timer-right-1 .text-xs,
+  #timer-right-2 .text-xs {
+    font-size: 0.5rem; /* Even smaller text for labels */
+  }
+
+  #timer-left .border,
+  #timer-right-1 .border,
+  #timer-right-2 .border {
+    padding: 3px; /* Further reduced padding */
+  }
+
+  /* Adjust spacing between timer columns */
+  #timer-left,
+  #timer-right-1,
+  #timer-right-2 {
+    gap: 3px; /* Further reduced spacing */
+  }
+}
+#timer-left-2 .text-xl {
+  font-size: 0.9rem;
+  color: white;
+}
+#timer-left-2 .text-xs {
+  font-size: 0.7rem;
+  color: white;
+}
+#timer-left-2 .border {
+  border-color: rgb(255, 255, 255);
+  padding: 8px;
+}
+.collection-card h3 {
+  font-family: montserrat;
+}
+#myProgress,
+#myProgress2 {
+  width: 85%;
+  border-radius: 3px;
+  background-color: rgb(199, 199, 199);
+  margin: 5px auto 20px auto;
+  padding: 0;
+}
+
+#myBar,
+#myBar2 {
+  width: 40%;
+  height: 10px;
+  border-radius: 3px;
+  align-items: center;
+  background-color: #f46b5b;
+  border: none;
+}
+.top-rated-section .owl-dots {
+  position: absolute !important;
+  bottom: -30px !important; /* Place dots below the carousel */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex !important;
+}
+.top-rated-section .owl-dot {
+  background: #e5e7eb !important;
+  width: 10px !important;
+  height: 10px !important;
+  margin: 0 5px !important;
+  border-radius: 50% !important;
+}
+.top-rated-section .owl-dot.active {
+  background: #ff6243 !important;
+}
+
+.why-choose-us img {
+  height: 50px;
+}
+.step-line {
+  height: 1px;
+  width: 100%;
+  background-color: #e5e7eb;
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+}
+.sell_product_question label {
+  font-family: montserrat;
+}
+
+.product-images-slider .swiper-slide {
+  padding-top: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.product-images-slider .swiper-slide img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.product-images-slider .swiper-button-prev {
+  left: 0;
+  color: #000;
+}
+.product-images-slider .swiper-button-next {
+  right: 0;
+  color: #000;
+}
+.product-images-slider-thumbs .swiper-slide {
+  cursor: pointer;
+  border: 1px solid #dddbdb;
+}
+.product-images-slider-thumbs .swiper-slide-thumb-active {
+  border-color: #f00;
+}
+.product-images-slider-thumbs-wrapper {
+  width: 100%;
+  padding-top: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.product-images-slider-thumbs-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
